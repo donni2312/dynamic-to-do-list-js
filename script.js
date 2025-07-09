@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Assuming these elements exist in your HTML
     const addButton = document.getElementById('addButton');
-    const taskInput = document.getElementById('taskInput');
-    const taskList = document.getElementById('taskList');
+    const taskInput = document.getElementById('task-input');
+    const taskList = document.getElementById('task-list');
 
     function addTask() {
         const taskText = taskInput.value.trim();
@@ -27,10 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         taskInput.value = "";
     }
 
-    // Add event listener to addButton
     addButton.addEventListener('click', addTask);
 
-    // Add event listener to taskInput for 'keypress' (Enter key)
     taskInput.addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
             addTask();

@@ -1,52 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    margin: 40px;
+    background: #f9f9f9;
 }
 
-#todo-app {
-    width: 100%;
-    max-width: 400px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-#taskInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+#task-input {
+    padding: 8px;
+    width: 200px;
 }
 
 #addButton {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
+    padding: 8px 12px;
+    margin-left: 5px;
+    background: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
+    border-radius: 3px;
 }
 
-#addTask:hover {
-    background-color: #0056b3;
+#addButton:hover {
+    background: #0056b3;
 }
 
-ul {
-    list-style-type: none;
+#task-list {
+    margin-top: 20px;
+    list-style: none;
     padding: 0;
 }
 
-li {
-    background-color: #eeeeee;
-    margin-top: 8px;
+#task-list li {
+    background: #fff;
+    margin-bottom: 8px;
     padding: 10px;
     border-radius: 4px;
     display: flex;
@@ -55,14 +40,14 @@ li {
 }
 
 .remove-btn {
-    cursor: pointer;
-    background-color: #ff6347;
-    color: white;
+    background: #dc3545;
+    color: #fff;
     border: none;
-    border-radius: 4px;
     padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .remove-btn:hover {
-    background-color: #d9534f;
+    background: #a71d2a;
 }
